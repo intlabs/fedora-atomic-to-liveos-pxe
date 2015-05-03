@@ -1,7 +1,7 @@
 #!/bin/bash
 # License: ASL2.0
 # Converts Fedora Cloud Atomic image into files usable for Ironic PXE booting
-
+yum install -y libguestfs-tools
 wget http://download.fedoraproject.org/pub/fedora/linux/releases/21/Cloud/Images/x86_64/Fedora-Cloud-Atomic-20141203-21.x86_64.qcow2
 IMAGE=Fedora-Cloud-Atomic-20141203-21.x86_64.qcow2
 IMAGE_TARGET=fedora-atomic
